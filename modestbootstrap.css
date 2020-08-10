@@ -1,0 +1,602 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none !important;
+}
+h1,h2,h3,h4{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "Myriad-Pro";  
+    src: url(http://www.anaveer.in/honda/font/MYRIADPRO-REGULAR.OTF) format("truetype");
+}
+body{
+    font-family: 'Myriad-Pro',sans-serif;
+}
+/*header*/
+header{
+    position: relative;
+    background-color: #1d2126;
+}
+header .container{
+    height: 81px;
+    line-height: 81px;
+}
+header .icon{
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+   background-color: transparent;
+   z-index: 10;
+}
+header .container ul{
+    text-align: right;
+}
+header .container ul li{
+    display: inline-block;
+}
+header .container ul li a{
+    border: 2px solid transparent;
+    border-radius: 3px;
+    padding: 8px 10px;
+    margin-left: 16px;
+    color: #a4aead;
+    text-transform: uppercase;
+}
+header .container ul li a:hover{
+    border-color: #5b6168;
+}
+header .container ul li a:active{
+    border-color: #23b7a4;
+    color: #23b7a4;
+}
+header .container ul li a.active{
+    border-color: #23b7a4;
+    color: #23b7a4;
+}
+/*banner*/
+#banner{
+    background-color: #3a454d;
+    background-image: url(image/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+}
+#banner .container{
+    height: 660px;
+    position: relative;
+}
+#banner .container>div:first-child{
+    max-width: 585px;
+    position: absolute;
+    left: 15px;
+    top: 224px;
+}
+#banner .container>div:first-child h2{
+    color: white;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+}
+#banner .container>div:first-child p{
+    margin-top: 26px;
+    margin-bottom: 36px;
+    font-size: 16px;
+    color: #a4aead;
+}
+#banner .container>div:first-child ul#button li{
+    display: inline-block;
+}
+#banner .container>div:first-child ul#button a{
+    color: white;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    margin-right: 11px;
+    font-size: 14px;
+    height: 44px;
+    line-height: 40px;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+#banner .container>div:first-child ul#button a:hover{
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+}
+#slidebar{
+    text-align: right;
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+}
+#slidebar li{
+    display: inline-block;
+}
+#slidebar li a{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-left: 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-indent: -1000000px;
+    color: white;
+}
+#slidebar li a.active{
+    background-color: white;
+}
+/*team*/
+#team {
+    border-bottom: 1.31px solid #dde1e4;
+}
+ h2.title{
+    line-height: 42px;
+    margin-top: 83px;
+    margin-bottom: 54px;
+    border-left: 10px solid #e1e6ea;
+    padding-left: 14px ;
+}
+#team p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+}
+#team .team-content p:nth-child(2){
+    margin-top: 32px;
+    margin-bottom: 100px;
+}
+
+#team .container ul li{
+    display: inline-block;
+}
+#team .container ul li a{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: #c8cdd0;
+    text-indent: -100000px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#team .container ul li a:hover{
+    background-color: #d0d5d9;
+}
+#team .container ul li:first-child a{
+    background-image: url(image/social/facebook.png);
+}
+#team .container ul li:nth-child(2) a{
+    background-image: url(image/social/twwiter.png);
+}
+#team .container ul li:nth-child(3) a{
+    background-image: url(image/social/google.png);
+}
+#team .container ul li:nth-child(4) a{
+    background-image: url(image/social/dribble.png);
+}
+#team .container ul li:nth-child(5) a{
+    background-image: url(image/social/behance.png);
+}
+#team .container ol li{
+    counter-increment: stt;
+    position: relative;
+}
+#team .container ol li::before{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: #23b7a4;
+    position: absolute;
+    top: 0px;
+    left: -72px;
+    content: counters(stt,".",decimal-leading-zero);
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+#team .container ol li{
+    margin-bottom: 19px;
+}
+#team .container ol li h3{
+    font-size: 18px;
+    line-height: 39px;
+    margin-bottom: 3px;
+}
+#team .container ol li p{
+    font-size: 16px;
+    line-height: 29px;
+    color: #8d8f92;
+}
+/*team member*/
+
+#teampic>div{
+  position: relative;
+  margin-bottom: 60px;
+}
+#teampic>div img{
+    background-color:#3a454d ;
+    width: 100%;
+}
+#teampic>div .info{
+    max-width: 100%;
+    background-color: #e1e6ea;
+    padding: 20px;
+}
+#teampic>div .info h4{
+    font-size: 16px;
+}
+#teampic>div .info p{
+    font-size: 14px;
+    color: #8d8f92;
+}
+#teampic>div:hover img{
+    opacity: 0.7;
+}
+#teampic>div:hover .info{
+    background-color: #3a454d;
+    color: white;
+}
+#teampic ul.logo{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left:24%;
+}
+#teampic ul.logo li a{
+    background-color: #3a454d;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-right: 0.5px solid white;
+    text-indent: -10000000px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+#teampic ul.logo li a:hover{
+    background-color: #4e5a62;
+}
+#teampic ul.logo li:first-child a{
+    background-image: url(image/social/twwiter.png);
+}
+#teampic ul.logo li:nth-child(2) a{
+    background-image: url(image/social/facebook.png);
+}
+#teampic ul.logo li:nth-child(3) a{
+    background-image: url(image/social/in.png);
+}
+
+#teampic>div:hover>.logo{
+    display: flex;
+}
+#work{
+    background-color: #3a454d;
+}
+#work .container h2{
+    display: inline-block;
+    color: white;
+}
+#work .container .teamimg{
+    height: 264px;
+    background-color: #7898ad;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+    position: relative;
+}
+#work .container .teamimg:nth-child(1){
+    background-image: url(image/pic5.jpg);
+}
+#work .container .teamimg:nth-child(2){
+    background-image: url(image/pic6.jpg);
+}
+#work .container .teamimg:nth-child(3){
+    background-image: url(image/pic7.jpg);
+}
+#work .container .teamimg:nth-child(4){
+    background-image: url(image/pic8.jpg);
+}
+#work .container .teamimg:nth-child(5){
+    background-image: url(image/pic9.jpg);
+}
+#work .container .teamimg:nth-child(6){
+    background-image: url(image/pic10.jpg);
+}
+#work .container .teamimg>.logoplus,
+#work .container .teamimg>.work-content{
+    display: none;
+    position: absolute;
+}
+#work .container .teamimg>.work-content{
+    background-color: #292f36;
+    font-size: 18px;
+    line-height: 42px;
+    padding-left: 20px;
+    color: white;
+    bottom:0px;
+    left: 0px;
+    width: 100%;
+    font-weight: normal;
+}
+#work .container .teamimg:hover>.logoplus{
+    display: block;
+    top: 50%;
+    left: 50%;
+}
+#work .container .teamimg:hover>.work-content{
+    display: block;  
+}
+#work #showme{
+    display: flex;
+    justify-content: center;
+}
+#work #showme button {
+    background-color: transparent;
+    color: white;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 60px;
+}
+#work #showme button:hover{
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+}
+/*what we do*/
+
+#what-we-do>div.tool>div{
+    position: relative;
+    padding-top: 84px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+#what-we-do>div.tool>div::before{
+    content: " ";
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: absolute;
+    top:0px;
+    left: 40%;
+}
+#what-we-do>div.tool>div:first-child::before{
+    background-image: url(image/icon/banh_rang.png);
+}
+#what-we-do>div.tool>div:nth-child(2)::before{
+    background-image: url(image/icon/pencil.png);
+}
+#what-we-do>div.tool>div:nth-child(3)::before{
+    background-image: url(image/icon/mobile.png);
+}
+#what-we-do>div.tool>div:nth-child(4)::before{
+    background-image: url(image/icon/clock.png);
+}
+#what-we-do>div.tool>div:nth-child(5)::before{
+    background-image: url(image/icon/banh_rang.png);
+}
+#what-we-do>div.tool>div:nth-child(6)::before{
+    background-image: url(image/icon/pencil.png);
+}
+#what-we-do>div.tool>div:nth-child(7)::before{
+    background-image: url(image/icon/mobile.png);
+}
+#what-we-do>div.tool>div:nth-child(8)::before{
+    background-image: url(image/icon/clock.png);
+}
+#what-we-do>div.tool>div p{
+    font-size: 16px;
+    color: #8d8f92;
+}
+/**feature**/
+#feature{
+    background-color: #3a454d; 
+    color: white;
+}
+#feature h2{
+    display: inline-block; 
+}
+#feature .feature-content>img{
+    max-width: 100%;
+}
+#feature .feature-content>h4{
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 53px;
+    margin-bottom: 30px;
+}
+#feature .feature-content>p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #dcdfe1;
+}
+/*stay in touch*/
+#ct{
+    position: relative;
+}
+#ct::before{
+    content: " ";
+    z-index: -1;;
+    position: absolute;
+    left: 0px;
+    top: 160px;
+    background-image: url(image/map.png);
+    height: 346px;
+    width: 100%;
+}
+#contact h2{
+    margin-bottom: 330px;
+}
+#contact .contact-info h3{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 54px;
+    margin-top: 188px;
+}
+#contact .contact-info p{
+    color: #8d8f92;
+    font-size: 16px;
+    margin-bottom: 40px;
+    
+}
+#contact form{
+    padding: 30px;
+    background-color: white;
+}
+#contact form label{
+    display: block;
+}
+#contact form .address input{
+    outline: none;
+    padding:15px;
+    margin-top: 12px;
+    background-color: #eaeef1;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+}
+#contact form textarea{
+    outline: none;
+    padding:15px;
+    width: 100%;
+    background-color: #eaeef1;
+    border: none;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+#contact form button{
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    background-color:#23b7a4 ;
+    border: 2px solid #23b7a4;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-top: 34px;
+}
+#contact form button:hover{
+    background-color: #069684;
+    border-color: #069684;
+}
+/*footer*/
+footer{
+    background-color: #3a454d;
+    color: white;
+}
+footer .container div p{
+    font-size: 14px;
+    line-height: 92px;
+}
+footer .container ul li{
+    display: inline-block;
+}
+footer .container ul{
+    margin-top: 40px;
+}
+footer .container ul li a{
+    display: inline-block;
+    text-indent: -100000px;
+    height:50px ;
+    width: 50px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+footer .container ul li:nth-child(1) a{
+    background-image: url(image/social/twwiter.png);
+}
+
+footer .container ul li:nth-child(2) a{
+    background-image: url(image/social/facebook.png);
+}
+footer .container ul li:nth-child(3) a{
+    background-image: url(image/social/skype.png);
+}
+footer .container ul li:nth-child(4) a{
+    background-image: url(image/social/behance.png);
+}
+footer .container ul li:nth-child(5) a{
+    background-image: url(image/social/in.png);
+}
+/** responsive **/
+@media screen and (max-width: 992px){
+    header .container{
+        height: auto;
+    }
+    header .container h1,header .container ul{
+        text-align: center;
+    }
+    #team .container ol li::before{
+        display: none;
+    }
+    #slidebar{
+        right: 40%;
+    }
+    #teampic ul.logo{
+        left: 30%;
+    }
+    #feature .features{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px){
+    header .icon{
+        display: inline-block;
+    }
+    header ul.topnav{
+        display: none;
+        z-index: 10;
+        position: absolute;
+        background-color: #1d2126;
+    }
+    header ul.responsive{
+        display: block;
+    }
+    header ul.topnav li{
+        display: block;
+        border: 1px solid white;
+    }
+    
+    #teampic ul.logo{
+        left: 24%;
+    }
+    #contact form{
+        padding:0;
+        padding-bottom: 60px;
+    }
+    footer{
+        text-align: center;
+    }
+    footer .container ul{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 576px){
+    #teampic ul.logo{
+        left: 30%;
+    }
+    footer .container div p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 382px){
+    #banner .container>div:first-child ul#button a {
+        padding: 0px 15px;
+    }
+    #team .container ul li a{
+        height: 45px;
+        width: 45px;
+    }
+    footer .container div p {
+        font-size: 10px;
+    }
+}
